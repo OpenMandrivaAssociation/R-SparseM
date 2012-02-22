@@ -9,8 +9,9 @@ Group:            Sciences/Mathematics
 License:          file LICENSE
 URL:              http://cran.r-project.org/web/packages/%{packname}/index.html
 Source0:          http://cran.r-project.org/src/contrib/%{packname}_%{version}.tar.gz
-Requires:         R-methods R-stats R-utils 
-BuildRequires:    R-devel Rmath-devel texlive-collection-latex R-methods R-stats R-utils
+Requires:         R-methods R-stats R-utils
+BuildRequires:    R-devel Rmath-devel texlive-collection-latex
+BuildRequires:    R-methods R-stats R-utils
 Patch0:           SparseM_0.91-format.patch
 
 %description
