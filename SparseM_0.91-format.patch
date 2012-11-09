@@ -1,0 +1,11 @@
+--- SparseM/SparseM/src/iohb.c.orig	2012-02-17 06:28:54.018886205 -0200
++++ SparseM/SparseM/src/iohb.c	2012-02-17 06:29:11.409947619 -0200
+@@ -1601,7 +1601,7 @@ void upcase(char* S)
+ 
+ void IOHBTerminate(char* message) 
+ {
+-   fprintf(stderr,message);
++   fprintf(stderr,"%s",message);
+    exit(1);
+ }
+ 
