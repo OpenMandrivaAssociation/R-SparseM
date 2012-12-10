@@ -9,9 +9,16 @@ Group:            Sciences/Mathematics
 License:          file LICENSE
 URL:              http://cran.r-project.org/web/packages/%{packname}/index.html
 Source0:          http://cran.r-project.org/src/contrib/%{packname}_%{version}.tar.gz
-Requires:         R-methods R-stats R-utils
-BuildRequires:    R-devel Rmath-devel texlive-collection-latex
-BuildRequires:    R-methods R-stats R-utils
+Requires:         R-methods
+Requires:         R-stats
+Requires:         R-utils 
+BuildRequires:    R-devel
+BuildRequires:    Rmath-devel
+BuildRequires:    texlive-collection-latex
+BuildRequires:    R-methods
+BuildRequires:    R-stats
+BuildRequires:    R-utils
+BuildRequires:    pkgconfig(lapack)
 Patch0:           SparseM_0.91-format.patch
 
 %description
@@ -48,3 +55,11 @@ rm -f %{buildroot}%{rlibdir}/R.css
 %{rlibdir}/%{packname}/extdata
 %{rlibdir}/%{packname}/help
 %{rlibdir}/%{packname}/libs
+
+
+%changelog
+* Fri Feb 17 2012 Paulo Andrade <pcpa@mandriva.com.br> 0.91-1
++ Revision: 775917
+- Import R-SparseM
+- Import R-SparseM
+
