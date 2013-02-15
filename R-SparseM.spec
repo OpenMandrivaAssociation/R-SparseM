@@ -2,13 +2,13 @@
 %global rlibdir  %{_libdir}/R/library
 
 Name:             R-%{packname}
-Version:          0.91
+Version:          0.96
 Release:          1
 Summary:          Sparse Linear Algebra
 Group:            Sciences/Mathematics
 License:          file LICENSE
 URL:              http://cran.r-project.org/web/packages/%{packname}/index.html
-Source0:          http://cran.r-project.org/src/contrib/%{packname}_%{version}.tar.gz
+Source0:          http://cran.r-project.org/src/contrib/SparseM_0.96.tar.gz
 Requires:         R-methods
 Requires:         R-stats
 Requires:         R-utils 
@@ -19,14 +19,12 @@ BuildRequires:    R-methods
 BuildRequires:    R-stats
 BuildRequires:    R-utils
 BuildRequires:    pkgconfig(lapack)
-Patch0:           SparseM_0.91-format.patch
 
 %description
 Basic linear algebra for sparse matrices
 
 %prep
 %setup -q -c -n %{packname}
-%patch0 -p1
 
 %build
 
@@ -62,4 +60,5 @@ rm -f %{buildroot}%{rlibdir}/R.css
 + Revision: 775917
 - Import R-SparseM
 - Import R-SparseM
+
 
