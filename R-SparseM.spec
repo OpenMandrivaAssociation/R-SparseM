@@ -3,7 +3,7 @@
 
 Name:             R-%{packname}
 Version:          1.03
-Release:          1
+Release:          2
 Summary:          Sparse Linear Algebra
 Group:            Sciences/Mathematics
 License:          file LICENSE
