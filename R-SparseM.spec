@@ -7,7 +7,7 @@ Release:          2
 Summary:          Sparse Linear Algebra
 Group:            Sciences/Mathematics
 License:          file LICENSE
-URL:              http://cran.r-project.org/web/packages/%{packname}/index.html
+URL:              https://cran.r-project.org/web/packages/%{packname}/index.html
 Source0:          http://cran.r-project.org/src/contrib/SparseM_1.03.tar.gz
 Requires:         R-methods
 Requires:         R-stats
